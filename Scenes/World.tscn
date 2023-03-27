@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://rsaeswtl86tm"]
+[gd_scene load_steps=22 format=3 uid="uid://dlb44c64ehcni"]
 
 [ext_resource type="Texture2D" uid="uid://bb20q08qq6d7o" path="res://Assets/Tilesets/ground tiles/new tiles/Grass hill tiles v.2.png" id="1_t6d3u"]
 [ext_resource type="Texture2D" uid="uid://b0ix7yheiq7gc" path="res://Assets/Tilesets/ground tiles/new tiles/Grass tiles v.2.png" id="2_qwrwo"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://d0vewfqb8xh3a" path="res://Scenes/Characters/Cow.tscn" id="8_qsqs6"]
 [ext_resource type="PackedScene" uid="uid://m4ixtbkxo6dv" path="res://Objects/Chest.tscn" id="9_1d8j7"]
 [ext_resource type="PackedScene" uid="uid://b4l60kimt6a4u" path="res://Objects/Bed.tscn" id="10_2afdv"]
+[ext_resource type="PackedScene" uid="uid://c3h0m4vlvl6mm" path="res://GUI.tscn" id="12_6xrrw"]
 [ext_resource type="PackedScene" uid="uid://ds3si7ixganvm" path="res://Objects/Floor.tscn" id="12_idsf3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaev1"]
@@ -707,6 +708,9 @@ sources/5 = SubResource("TileSetAtlasSource_n6h8k")
 
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
+position = Vector2(-866, -638)
+
+[node name="UI_Canvas" parent="." instance=ExtResource("12_6xrrw")]
 
 [node name="Houses" type="Area2D" parent="."]
 
@@ -782,8 +786,128 @@ position = Vector2(32, 9)
 [node name="Bed" parent="." instance=ExtResource("10_2afdv")]
 position = Vector2(74, 97)
 
-[node name="Floor" parent="." instance=ExtResource("12_idsf3")]
-position = Vector2(-34, -6)
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Floor" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-56, -105)
+
+[node name="Floor2" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-40, -105)
+
+[node name="Floor3" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-24, -105)
+
+[node name="Floor4" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-8, -105)
+
+[node name="Floor5" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(8, -105)
+
+[node name="Floor6" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-56, -89)
+
+[node name="Floor7" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-40, -89)
+
+[node name="Floor8" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-24, -89)
+
+[node name="Floor9" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-8, -89)
+
+[node name="Floor10" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(8, -89)
+
+[node name="Floor11" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-56, -73)
+
+[node name="Floor12" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-40, -73)
+
+[node name="Floor13" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-24, -73)
+
+[node name="Floor14" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-8, -73)
+
+[node name="Floor15" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(8, -73)
+
+[node name="Floor16" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-56, -57)
+
+[node name="Floor17" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-40, -57)
+
+[node name="Floor18" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-24, -57)
+
+[node name="Floor19" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(-8, -57)
+
+[node name="Floor20" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(8, -57)
+
+[node name="Floor21" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(24, -105)
+
+[node name="Floor22" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(40, -105)
+
+[node name="Floor23" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(56, -105)
+
+[node name="Floor24" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(72, -105)
+
+[node name="Floor25" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(88, -105)
+
+[node name="Floor26" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(24, -89)
+
+[node name="Floor27" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(40, -89)
+
+[node name="Floor28" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(56, -89)
+
+[node name="Floor29" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(72, -89)
+
+[node name="Floor30" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(88, -89)
+
+[node name="Floor31" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(24, -73)
+
+[node name="Floor32" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(40, -73)
+
+[node name="Floor33" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(56, -73)
+
+[node name="Floor34" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(72, -73)
+
+[node name="Floor35" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(88, -73)
+
+[node name="Floor36" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(24, -57)
+
+[node name="Floor37" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(40, -57)
+
+[node name="Floor38" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(56, -57)
+
+[node name="Floor39" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(72, -57)
+
+[node name="Floor40" parent="Node2D" instance=ExtResource("12_idsf3")]
+position = Vector2(88, -57)
 
 [connection signal="body_entered" from="Houses" to="TileMap" method="_on_houses_body_entered"]
 [connection signal="body_exited" from="Houses" to="TileMap" method="_on_houses_body_exited"]
+[connection signal="tool_changed" from="Player" to="UI_Canvas" method="_on_player_tool_changed"]

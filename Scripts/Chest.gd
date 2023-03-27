@@ -11,7 +11,8 @@ func _process(delta):
 	pass
 
 
-func touched(body):
-	print("Abriendo cofre")
-	$AnimationPlayer.play("open_chest")
+func touched(body, tool):
+	if(tool == 1):
+		print("Abriendo cofre")
+		$AnimationPlayer.play("open_chest")
 	body.touched(1)

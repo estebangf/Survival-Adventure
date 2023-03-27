@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3h0m4vlvl6mm"]
+
+[ext_resource type="Texture2D" uid="uid://ik3tfxdsfn1g" path="res://Assets/Characters/Tools.png" id="1_hh4a1"]
+[ext_resource type="Script" path="res://Scripts/GUI.gd" id="1_o3hfp"]
+
+[node name="UI_Canvas" type="CanvasLayer"]
+script = ExtResource("1_o3hfp")
+
+[node name="Interface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 503.0
+offset_bottom = 316.0
+
+[node name="ToolSprite" type="Sprite2D" parent="Interface"]
+position = Vector2(485, 301)
+texture = ExtResource("1_hh4a1")
+hframes = 6
+vframes = 6
